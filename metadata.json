@@ -1,0 +1,6 @@
+{
+  "name": "Réponse Client Express",
+  "description": "Un questionnaire et outil de modèles de réponses dynamiques pour les créatrices et artistes gérant des boutiques en ligne.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

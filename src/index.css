@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,750;1,300;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-[#2D302D] bg-[#F9F7F2] dark:bg-[#1E201E] dark:text-[#F8F6F0] transition-colors duration-300;
+  }
+}
+
+/* Custom scrollbar styling for high-fashion minimal navigation */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(45, 48, 45, 0.15);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(248, 246, 240, 0.15);
+}
+
+/* Vintage paper frame styling */
+.editorial-frame {
+  border: 12px solid #E8E4DB;
+  transition: border-color 0.3s ease;
+}
+
+.dark .editorial-frame {
+  border-color: #2D302D;
+}
