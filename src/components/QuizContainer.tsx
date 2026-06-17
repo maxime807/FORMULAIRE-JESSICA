@@ -316,7 +316,7 @@ export default function QuizContainer({
                     : "bg-white/40 border-[#2D302D]/15 hover:border-[#2D302D]/35 dark:bg-[#2D302D]/10 dark:border-[#F8F6F0]/10 text-[#2D302D]/60 dark:text-[#F8F6F0]/60 hover:text-[#2D302D] dark:hover:text-[#F8F6F0]"
                 }`}
               >
-                <span>{category.emoji}</span>
+                <span className="text-xs font-serif font-light italic text-[#2D302D]/50 dark:text-[#F8F6F0]/50">{category.emoji}.</span>
                 <Icon className="w-3.5 h-3.5" />
                 <span className="text-sm font-serif">{category.title}</span>
               </button>
@@ -355,7 +355,7 @@ export default function QuizContainer({
                   placeholder="Rechercher une question ou un mot..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-9 pr-8 py-2.5 text-xs bg-white/60 dark:bg-[#2D302D]/30 border border-[#2D302D]/10 dark:border-[#F8F6F0]/10 rounded-lg focus:ring-1 focus:ring-[#2D302D] outline-none text-[#2D302D] dark:text-[#F8F6F0]"
+                  className="w-full pl-9 pr-8 py-2.5 text-xs bg-white dark:bg-[#1E201E] border border-[#2D302D]/35 dark:border-[#F8F6F0]/35 rounded-lg focus:ring-2 focus:ring-[#2D302D]/20 outline-none text-[#2D302D] dark:text-[#F8F6F0] placeholder-[#2D302D]/55 dark:placeholder-[#F8F6F0]/55 transition-all font-sans shadow-xs"
                 />
                 <Icons.Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#2D302D]/40 dark:text-[#F8F6F0]/40 pointer-events-none" />
                 {searchQuery && (
@@ -465,7 +465,7 @@ export default function QuizContainer({
                             [key]: e.target.value,
                           }));
                         }}
-                        className="w-full px-3.5 py-2.5 text-xs bg-white/60 dark:bg-[#2D302D]/30 border border-[#2D302D]/10 dark:border-[#F8F6F0]/10 rounded-lg focus:bg-white focus:ring-1 focus:ring-[#2D302D] outline-none text-[#2D302D] dark:text-white transition-all font-sans"
+                        className="w-full px-3.5 py-2.5 text-xs bg-white dark:bg-[#1E201E] border border-[#2D302D]/35 dark:border-[#F8F6F0]/35 rounded-lg focus:bg-white dark:focus:bg-[#1E201E] focus:ring-2 focus:ring-[#2D302D]/20 outline-none text-[#2D302D] dark:text-[#F8F6F0] placeholder-[#2D302D]/55 dark:placeholder-[#F8F6F0]/55 transition-all font-sans shadow-xs"
                       />
                     </div>
                   );
@@ -610,7 +610,7 @@ export default function QuizContainer({
                               value={manualEditedText}
                               onChange={(e) => setManualEditedText(e.target.value)}
                               rows={8}
-                              className="w-full p-3 bg-white/60 dark:bg-black/20 border border-[#2D302D]/10 dark:border-[#F8F6F0]/10 rounded-lg text-sm text-[#2D302D] dark:text-white outline-none focus:ring-1 focus:ring-[#2D302D]"
+                              className="w-full p-3 bg-white dark:bg-[#1E201E] border border-[#2D302D]/35 dark:border-[#F8F6F0]/35 rounded-lg text-sm text-[#2D302D] dark:text-[#F8F6F0] outline-none focus:ring-2 focus:ring-[#2D302D]/20 focus:border-[#2D302D] dark:focus:border-[#F8F6F0] placeholder-[#2D302D]/55 dark:placeholder-[#F8F6F0]/55 transition-all font-sans shadow-xs"
                               placeholder="Écrivez ou modifiez le texte ici libre-service..."
                             />
                             <p className="text-[10px] text-[#2D302D]/40 dark:text-[#F8F6F0]/40 mt-1.5 italic font-serif">

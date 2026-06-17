@@ -81,7 +81,7 @@ export default function WelcomeScreen({
             placeholder="Rechercher un modèle de réponse... (ex. 'personnaliser', 'délais')"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-12 pr-32 py-4 bg-white/60 dark:bg-[#2D302D]/30 border border-[#2D302D]/10 dark:border-[#F8F6F0]/10 rounded-xl focus:ring-1 focus:ring-[#2D302D]/30 focus:border-[#2D302D] outline-none text-[#2D302D] dark:text-[#F8F6F0] transition-all font-sans text-sm"
+            className="w-full pl-12 pr-32 py-4 bg-white dark:bg-[#1E201E] border border-[#2D302D]/30 dark:border-[#F8F6F0]/30 rounded-xl focus:ring-2 focus:ring-[#2D302D]/20 focus:border-[#2D302D] dark:focus:border-[#F8F6F0] outline-none text-[#2D302D] dark:text-[#F8F6F0] placeholder-[#2D302D]/55 dark:placeholder-[#F8F6F0]/55 transition-all font-sans text-sm shadow-xs"
           />
           <Icons.Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#2D302D]/40 dark:text-[#F8F6F0]/40 w-4 h-4 pointer-events-none" />
           
@@ -133,7 +133,7 @@ export default function WelcomeScreen({
               >
                 <div>
                   <div className="flex items-center gap-3 mb-5">
-                    <span className="text-2xl">{category.emoji}</span>
+                    <span className="text-xl font-serif font-light italic text-[#2D302D]/60 dark:text-[#F8F6F0]/60">{category.emoji}.</span>
                     <div className="p-2 rounded-lg bg-[#E8E4DB]/40 dark:bg-[#2D302D] text-[#2D302D] dark:text-[#F8F6F0] transition-colors group-hover:bg-[#E8E4DB]/70 dark:group-hover:bg-[#2D302D]/80">
                       <IconComponent className="w-4 h-4" />
                     </div>

@@ -10,7 +10,7 @@ export const categoriesData: CategoryItem[] = [
     id: "avant",
     number: 1,
     title: "Avant l'achat",
-    emoji: "1⃣",
+    emoji: "01",
     iconName: "ShoppingBag",
     description: "Questions récurrentes d'acheteurs potentiels avant de finaliser leur commande (personnalisation, délais, réductions, livraison, etc.)",
     questions: [
@@ -162,7 +162,7 @@ export const categoriesData: CategoryItem[] = [
     id: "pendant",
     number: 2,
     title: "Pendant l'achat",
-    emoji: "2⃣",
+    emoji: "02",
     iconName: "CreditCard",
     description: "Questions techniques liées à la validation de la commande, aux codes promos, à l'interface Etsy ou au panier d'achat",
     questions: [
@@ -217,7 +217,7 @@ export const categoriesData: CategoryItem[] = [
     id: "apres",
     number: 3,
     title: "Après l'achat",
-    emoji: "3⃣",
+    emoji: "03",
     iconName: "PackageCheck",
     description: "Gestion des commandes après validation (suivi de livraison, retards, retours, remboursements, avis et litiges)",
     questions: [
@@ -376,7 +376,7 @@ export const categoriesData: CategoryItem[] = [
     id: "relationnel",
     number: 4,
     title: "Relationnel",
-    emoji: "4⃣",
+    emoji: "04",
     iconName: "HeartHandshake",
     description: "Comment réagir aux avis (positifs et négatifs), trouver des arrangements et gérer les demandes de partenariats",
     questions: [
@@ -416,7 +416,7 @@ export const categoriesData: CategoryItem[] = [
     id: "autres",
     number: 5,
     title: "Autres situations",
-    emoji: "5⃣",
+    emoji: "05",
     iconName: "Sparkles",
     description: "Retards de fabrication, erreurs d'adresse de livraison, avis 3/4 étoiles ou réponse publique à un avis négatif",
     questions: [
